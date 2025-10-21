@@ -7,10 +7,6 @@
     "region": {
       "hash": "cfc5079627d24948",
       "reason": "We ignore compute"
-    },
-    "safe_chunks": {
-      "hash": "6ef0cc7884b81da2",
-      "reason": "we ignore compute"
     }
   }
 }

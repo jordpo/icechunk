@@ -265,7 +265,9 @@ def to_icechunk(
         If True, only allow writes to when there is a many-to-one relationship
         between Zarr chunks (specified in encoding) and Dask chunks.
         Set False to override this restriction; however, data may become corrupted
-        if Zarr arrays are written in parallel.
+        if Zarr arrays are written in parallel. This option may be useful in combination
+        with ``compute=False`` to initialize a Zarr from an existing
+        Dataset with arbitrary chunk structure.
         In addition to the many-to-one relationship validation, it also detects partial
         chunks writes when using the region parameter,
         these partial chunks are considered unsafe in the mode "r+" but safe in
